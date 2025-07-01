@@ -31,10 +31,10 @@ public class Assignment_reetrieveData_files {
 		Workbook factory = WorkbookFactory.create(fis2);
 		
 		String fname = factory.getSheet("Sheet1").getRow(1).getCell(0).getStringCellValue();
-		System.out.println(fname);
+		System.out.println("first name: "+fname);
 
 		String sname = factory.getSheet("Sheet1").getRow(1).getCell(1).getStringCellValue();
-		System.out.println(sname);
+		System.out.println("surname: "+sname);
 
 		Double day = factory.getSheet("Sheet1").getRow(1).getCell(2).getNumericCellValue();
 		System.out.println(day);
