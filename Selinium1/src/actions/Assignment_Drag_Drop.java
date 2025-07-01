@@ -1,7 +1,6 @@
 package actions;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,6 +34,7 @@ public class Assignment_Drag_Drop {
 		driver.navigate().back();
 		driver.navigate().forward();
 
+		driver.findElement(By.linkText("CheatSheets")).click();
 		driver.findElement(By.linkText("CheatSheets")).click();
 
 	}
